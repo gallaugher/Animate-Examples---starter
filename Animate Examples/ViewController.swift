@@ -9,17 +9,36 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func resetPressed(_ sender: UIButton) {
     }
-
-
+    
+    @IBAction func changeBackgroundPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func loopLogoPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func flyInEagleWhenPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func increaseBy60Pressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func decreaseBy60Pressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func pushImageRightPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func slideScreenRightPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func fadePressed(_ sender: UIButton) {
+    }
 }
 

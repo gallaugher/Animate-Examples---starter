@@ -98,12 +98,38 @@
                                     <action selector="flyInEagleWhenPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypD-dB-J9o"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DGy-cc-mPR">
+                                <rect key="frame" x="16" y="227" width="343" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="m6V-G3-Qkx" appends="YES" id="n3g-Vc-QaP"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNg-mW-1EL">
+                                <rect key="frame" x="57" y="669" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="motivation"/>
+                                <connections>
+                                    <action selector="motivationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eQM-jE-XGR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="firstImageView" destination="zWZ-G5-wM7" id="i3e-5W-NWk"/>
+                        <outlet property="motivationImage" destination="DGy-cc-mPR" id="eLf-uT-IKc"/>
+                        <outlet property="secondImageView" destination="vxt-NW-LL7" id="ie0-Bc-2p3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="m6V-G3-Qkx">
+                    <connections>
+                        <action selector="motivationTapped:" destination="BYZ-38-t0r" id="Ehe-Gr-hGv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="37.600000000000001" y="35.467980295566505"/>
         </scene>
